@@ -1,0 +1,75 @@
+# Dependencies
+node_modules/
+
+# Build outputs
+/dist/
+/build/
+/.turbo/
+/.cache/
+/.tsbuildinfo
+
+# Test outputs
+/coverage/
+.nyc_output/
+/test-results/
+/playwright-report/
+
+# Runtime / temp
+*.log
+logs/
+*.pid
+*.pid.lock
+*.seed
+*.tmp
+*.temp
+/tmp/
+
+# Secrets / local env
+.env
+.env.*
+!.env.example
+*.pem
+*.key
+*.crt
+*.p12
+*.pfx
+*.kdbx
+*.gpg
+*.age
+secrets/
+
+# Editor / OS
+.DS_Store
+Thumbs.db
+.idea/
+.vscode/
+*.swp
+*.swo
+
+# Package managers
+.pnpm-store/
+.npm/
+.yarn/
+.yarn-cache/
+
+# Bitcoin / regtest / local chain data
+bitcoin-data/
+regtest-data/
+*.cookie
+mempool-data/
+blocks/
+chainstate/
+wallets/
+
+# Misc generated artifacts
+*.tgz
+*.tar
+*.tar.gz
+*.zip
+*.sqlite
+*.db
+*.db-*
+
+# Docker overrides
+.docker/
+docker-compose.override.yml

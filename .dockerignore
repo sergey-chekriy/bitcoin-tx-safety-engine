@@ -1,0 +1,14 @@
+node_modules
+dist
+coverage
+.git
+.github
+.env
+.env.*
+*.log
+*.tgz
+*.tar
+*.tar.gz
+*.zip
+bitcoin-data
+regtest-data

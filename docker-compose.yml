@@ -1,0 +1,26 @@
+services:
+  btse-dev:
+    build:
+      context: .
+      dockerfile: Dockerfile
+    image: bitcoin-tx-safety-engine:local
+    container_name: btse-dev
+    working_dir: /app
+    command: sh -lc "npm run dev"
+    volumes:
+      - ./:/app
+      - btse_node_modules:/app/node_modules
+
+  btse-test:
+    build:
+      context: .
+      dockerfile: Dockerfile
+    image: bitcoin-tx-safety-engine:local
+    working_dir: /app
+    command: sh -lc "npm run ci"
+    volumes:
+      - ./:/app
+      - btse_node_modules:/app/node_modules
+
+volumes:
+  btse_node_modules:
